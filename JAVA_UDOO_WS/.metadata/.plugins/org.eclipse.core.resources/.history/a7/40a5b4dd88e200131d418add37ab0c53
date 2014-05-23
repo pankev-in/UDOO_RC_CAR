@@ -1,0 +1,32 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.net.SocketException;
+import java.net.UnknownHostException;
+
+
+public class RcClient {
+	Socket sock;
+	InputStream in;
+	OutputStream out;
+
+	public RcClient(String ip,int port) throws UnknownHostException, IOException {
+		
+		sock = new Socket(ip,port);    
+		in = sock.getInputStream();  
+		out = sock.getOutputStream();   
+
+	}
+
+	public void send(String income) throws IOException{
+		byte IN[]=income.getBytes();
+		out.write(IN);  
+	}
+	
+	
+
+}

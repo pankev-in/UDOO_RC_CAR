@@ -1,0 +1,35 @@
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+
+
+public class RcClient {
+	private DatagramSocket dataSocket;
+	private DatagramPacket dataPacket;
+	private byte sendDataByte[];
+	private String sendStr;
+
+	public RcClient(String ip,String port) {
+		try {
+			int PORT=Integer.parseInt(port);
+			byte ipaddress[]=ip.getBytes();
+			dataSocket = new DatagramSocket(PORT);
+			sendDataByte = new byte[20];
+			dataPacket = new DatagramPacket(sendDataByte, sendDataByte.length,
+					InetAddress.getByAddress(ipaddress), PORT);
+		} catch (SocketException se) {
+			se.printStackTrace();
+		} catch (IOException ie) {
+			ie.printStackTrace();
+		}
+	}
+
+	public void send(String income) throws IOException{
+		sendStr = "";
+		sendDataByte = sendStr.getBytes();
+		dataSocket.send(dataPacket);
+	}
+
+}
