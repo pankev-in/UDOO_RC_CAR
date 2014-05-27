@@ -1,67 +1,97 @@
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.Socket;
-
-
+import java.net.*;
 
 public class RcClient {
-	private Socket sock;
-	private InputStream in;
-	private OutputStream out;
-	private int speed=0;
-	private int angle=0;
+	private DatagramSocket sock;
+	private DatagramPacket out;
+	private int speed = 0;
+	private int angle = 0;
+	InetAddress host;
+	String welcomeMessage;
 
-	public RcClient(String ip,int port){
+	public RcClient(String ip, int port) {
+		welcomeMessage = new String("Connection created!!!");
 		try {
-			sock = new Socket(ip,port);    
-			in = sock.getInputStream();  
-			out = sock.getOutputStream();   
-			out.write(new String("Connection from"+sock.getPort()+"created!!!").getBytes());
+			host = InetAddress.getByName(ip);
+			System.out.println("Host:" + ip + " Port:" + port);
+			sock = new DatagramSocket();
+			sock.connect(host, port);
+			out = new DatagramPacket(welcomeMessage.getBytes(),
+					welcomeMessage.length(), host, port);
+			sock.send(out);
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
 
 	}
 
-	public void send(String income) throws IOException{
-		
-		String[] in=income.split(":");
-		switch (in[0]){
-			case "Pressed":
-				switch(in[1]){
-					case "W":speed=6;break;
-					case "S":speed=-6;break;
-					case "A":angle=-10;break;
-					case "D":angle=10;break;
-				}
+	public void send(String income) throws IOException {
+
+		String[] in = income.split(":");
+		switch (in[0]) {
+		case "Pressed":
+			switch (in[1]) {
+			case "W":
+				speed = 6;
 				break;
-			case "Released":
-				switch(in[1]){
-					case "W":speed=0;break;
-					case "S":speed=0;break;
-					case "A":angle=0;break;
-					case "D":angle=0;break;
-				}
+			case "S":
+				speed = -6;
 				break;
-			case "Button":
-				switch(in[1]){
-					case "Up":break;
-					case "Down":break;
-					case "Left":break;
-					case "Right":break;
-				}
+			case "A":
+				angle = -10;
 				break;
-		
+			case "D":
+				angle = 10;
+				break;
+			}
+			break;
+		case "Released":
+			switch (in[1]) {
+			case "W":
+				speed = 0;
+				break;
+			case "S":
+				speed = 0;
+				break;
+			case "A":
+				angle = 0;
+				break;
+			case "D":
+				angle = 0;
+				break;
+			}
+			break;
+		case "Button":
+			switch (in[1]) {
+			case "Up":
+				break;
+			case "Down":
+				break;
+			case "Left":
+				break;
+			case "Right":
+				break;
+			}
+			break;
+
 		}
-		out.write(new String(speed+"+"+angle+".").getBytes());  
+		out.setData(new String(speed + "+" + angle + ".").getBytes());
+		sock.send(out);
 	}
-	
-	
-	
-	public void end() throws IOException{
-		out.write(new String("end").getBytes());
-		sock.close();
+
+	public void reconnect(String ip, int port) throws IOException {
+		host = InetAddress.getByName(ip);
+		out.setAddress(host);
+		out.setPort(port);
+		sock.connect(host, port);
+		out.setData(welcomeMessage.getBytes());
+		sock.send(out);
+	}
+
+	public void end() throws IOException {
+		out.setData(new String("end").getBytes());
+		sock.send(out);
+		sock.disconnect();
 	}
 
 }
