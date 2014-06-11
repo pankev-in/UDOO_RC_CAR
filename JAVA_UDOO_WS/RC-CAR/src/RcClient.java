@@ -32,16 +32,16 @@ public class RcClient {
 		case "Pressed":
 			switch (in[1]) {
 			case "W":
-				speed = 6;
+				speed = 5;
 				break;
 			case "S":
-				speed = -6;
+				speed = -5;
 				break;
 			case "A":
-				angle = -10;
+				angle = -12;
 				break;
 			case "D":
-				angle = 10;
+				angle = 12;
 				break;
 			}
 			break;
@@ -76,7 +76,11 @@ public class RcClient {
 
 		}
 		out.setData(new String(speed + "+" + angle + ".").getBytes());
+
+		
 		sock.send(out);
+
+		
 	}
 
 	public void reconnect(String ip, int port) throws IOException {
