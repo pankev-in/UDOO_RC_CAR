@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete 3 resources" deleteContents="true" description="Delete 3 resources" element1="/appcompat_v7" element2="/ClientCameraOverlayService" element3="/MyFirstAPP" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1401268055013"/>
-</session>
