@@ -1,0 +1,33 @@
+eclipse.preferences.version=1
+pm.eclipse.editbox.provider.c++_Default=\#COMMENT\n\#Thu May 22 22\:47\:16 CEST 2014\nHighlightOne\=true\nFillGradient\=false\nFillSelected\=true\nRoundBox\=true\nBorderColorType\=0\nName\=Default\nExpandBox\=false\nBorderDrawLine\=false\nFillOnMove\=false\nAlpha\=0\nHighlightWidth\=1\nBorderWidth\=1\nHighlightColor\=000000\nBorderColor\=00bbbb\nFillKeyModifier\=Alt\nHighlightColorType\=0\nFillGradientColor\=null\nBuilder\=Text\nHighlightDrawLine\=false\nFillSelectedColor\=ffffc4\nBorderLineStyle\=0\nColors\=null-d0dd9b-cdd8b9-e9f58b\nHighlightLineStyle\=0\nNoBackground\=false\nCirculateLevelColors\=false\n
+pm.eclipse.editbox.provider.c++_default=Default
+pm.eclipse.editbox.provider.c++_enabled=true
+pm.eclipse.editbox.provider.c++_fileNames=*.c,*.cpp,*.h,*.hpp
+pm.eclipse.editbox.provider.java_Default=\#COMMENT\n\#Thu May 22 22\:47\:16 CEST 2014\nHighlightOne\=false\nFillGradient\=false\nFillSelected\=true\nRoundBox\=true\nBorderColorType\=1\nName\=Default\nExpandBox\=false\nBorderDrawLine\=false\nFillOnMove\=true\nAlpha\=0\nHighlightWidth\=1\nBorderWidth\=1\nHighlightColor\=acb3b7\nBorderColor\=c0c0c0\nFillKeyModifier\=Alt\nHighlightColorType\=3\nFillGradientColor\=dadcc2\nBuilder\=Java\nHighlightDrawLine\=false\nFillSelectedColor\=ffffff\nBorderLineStyle\=2\nColors\=ffffff-c5d0ac-d9e3b7-e8ecd9\nHighlightLineStyle\=0\nNoBackground\=false\nCirculateLevelColors\=false\n
+pm.eclipse.editbox.provider.java_default=Default
+pm.eclipse.editbox.provider.java_enabled=true
+pm.eclipse.editbox.provider.java_fileNames=*.java,*.class,*.groovy,*.scala
+pm.eclipse.editbox.provider.js_Default=\#COMMENT\n\#Thu May 22 22\:47\:16 CEST 2014\nHighlightOne\=true\nFillGradient\=false\nFillSelected\=true\nRoundBox\=true\nBorderColorType\=0\nName\=Default\nExpandBox\=false\nBorderDrawLine\=false\nFillOnMove\=false\nAlpha\=0\nHighlightWidth\=1\nBorderWidth\=1\nHighlightColor\=000000\nBorderColor\=00bbbb\nFillKeyModifier\=Alt\nHighlightColorType\=0\nFillGradientColor\=null\nBuilder\=Text\nHighlightDrawLine\=false\nFillSelectedColor\=ffffc4\nBorderLineStyle\=0\nColors\=null-d0dd9b-cdd8b9-e9f58b\nHighlightLineStyle\=0\nNoBackground\=false\nCirculateLevelColors\=false\n
+pm.eclipse.editbox.provider.js_default=Default
+pm.eclipse.editbox.provider.js_enabled=true
+pm.eclipse.editbox.provider.js_fileNames=*.js,*.jjs,*.jshintrc,*.mjs,*.njs,*.pjs,*.vjs,*.ts,*.coffee,*.dart
+pm.eclipse.editbox.provider.markup_Default=\#COMMENT\n\#Thu May 22 22\:47\:16 CEST 2014\nHighlightOne\=false\nFillGradient\=true\nFillSelected\=true\nRoundBox\=false\nBorderColorType\=1\nName\=Default\nExpandBox\=false\nBorderDrawLine\=false\nFillOnMove\=false\nAlpha\=0\nHighlightWidth\=1\nBorderWidth\=1\nHighlightColor\=000000\nBorderColor\=808080\nFillKeyModifier\=null\nHighlightColorType\=3\nFillGradientColor\=dadcc2\nBuilder\=Markup\nHighlightDrawLine\=false\nFillSelectedColor\=ffffff\nBorderLineStyle\=0\nColors\=d4d0c8-d9dbc0-dee6b8\nHighlightLineStyle\=0\nNoBackground\=false\nCirculateLevelColors\=true\n
+pm.eclipse.editbox.provider.markup_default=Default
+pm.eclipse.editbox.provider.markup_enabled=true
+pm.eclipse.editbox.provider.markup_fileNames=*.*ml,*.jsp,*.html,*.hjs,*.css,*.less
+pm.eclipse.editbox.provider.php_Default=\#COMMENT\n\#Thu May 22 22\:47\:16 CEST 2014\nHighlightOne\=true\nFillGradient\=false\nFillSelected\=true\nRoundBox\=true\nBorderColorType\=0\nName\=Default\nExpandBox\=false\nBorderDrawLine\=false\nFillOnMove\=false\nAlpha\=0\nHighlightWidth\=1\nBorderWidth\=1\nHighlightColor\=000000\nBorderColor\=00bbbb\nFillKeyModifier\=Alt\nHighlightColorType\=0\nFillGradientColor\=null\nBuilder\=Text\nHighlightDrawLine\=false\nFillSelectedColor\=ffffc4\nBorderLineStyle\=0\nColors\=null-d0dd9b-cdd8b9-e9f58b\nHighlightLineStyle\=0\nNoBackground\=false\nCirculateLevelColors\=false\n
+pm.eclipse.editbox.provider.php_default=Default
+pm.eclipse.editbox.provider.php_enabled=true
+pm.eclipse.editbox.provider.php_fileNames=*.php
+pm.eclipse.editbox.provider.python_Default=\#COMMENT\n\#Thu May 22 22\:47\:16 CEST 2014\nHighlightOne\=true\nFillGradient\=false\nFillSelected\=true\nRoundBox\=true\nBorderColorType\=1\nName\=Default\nExpandBox\=false\nBorderDrawLine\=true\nFillOnMove\=true\nAlpha\=0\nHighlightWidth\=1\nBorderWidth\=1\nHighlightColor\=000000\nBorderColor\=00bbbb\nFillKeyModifier\=Alt\nHighlightColorType\=3\nFillGradientColor\=e1e1d0\nBuilder\=Text2\nHighlightDrawLine\=false\nFillSelectedColor\=e1e1d0\nBorderLineStyle\=0\nColors\=ffffff\nHighlightLineStyle\=0\nNoBackground\=false\nCirculateLevelColors\=false\n
+pm.eclipse.editbox.provider.python_default=Default
+pm.eclipse.editbox.provider.python_enabled=true
+pm.eclipse.editbox.provider.python_fileNames=*.py
+pm.eclipse.editbox.provider.ruby_Default=\#COMMENT\n\#Thu May 22 22\:47\:16 CEST 2014\nHighlightOne\=true\nFillGradient\=false\nFillSelected\=true\nRoundBox\=true\nBorderColorType\=0\nName\=Default\nExpandBox\=false\nBorderDrawLine\=false\nFillOnMove\=false\nAlpha\=0\nHighlightWidth\=1\nBorderWidth\=1\nHighlightColor\=000000\nBorderColor\=00bbbb\nFillKeyModifier\=Alt\nHighlightColorType\=0\nFillGradientColor\=null\nBuilder\=Text\nHighlightDrawLine\=false\nFillSelectedColor\=ffffc4\nBorderLineStyle\=0\nColors\=null-d0dd9b-cdd8b9-e9f58b\nHighlightLineStyle\=0\nNoBackground\=false\nCirculateLevelColors\=false\n
+pm.eclipse.editbox.provider.ruby_default=Default
+pm.eclipse.editbox.provider.ruby_enabled=true
+pm.eclipse.editbox.provider.ruby_fileNames=*.rb,*.ruby
+pm.eclipse.editbox.provider.text_Default=\#COMMENT\n\#Thu May 22 22\:47\:16 CEST 2014\nHighlightOne\=true\nFillGradient\=false\nFillSelected\=true\nRoundBox\=true\nBorderColorType\=1\nName\=Default\nExpandBox\=false\nBorderDrawLine\=false\nFillOnMove\=false\nAlpha\=0\nHighlightWidth\=1\nBorderWidth\=1\nHighlightColor\=000000\nBorderColor\=00bbbb\nFillKeyModifier\=Alt\nHighlightColorType\=2\nFillGradientColor\=null\nBuilder\=Text\nHighlightDrawLine\=false\nFillSelectedColor\=ffffc4\nBorderLineStyle\=0\nColors\=c4c7b1-d0dd9b-cdd8b9-e2e3ac-f2fabc\nHighlightLineStyle\=0\nNoBackground\=false\nCirculateLevelColors\=false\n
+pm.eclipse.editbox.provider.text_default=Default
+pm.eclipse.editbox.provider.text_enabled=true
+pm.eclipse.editbox.provider.text_fileNames=*.txt,*.*
